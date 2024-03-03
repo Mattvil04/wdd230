@@ -3,10 +3,7 @@
         background-color: #000000; /* Black background color */
         color: #ffffff; /* White text color */
     }
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-        gap: 1rem;
-    }
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }

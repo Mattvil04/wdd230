@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+h1 {
+    color: #004080; /* Dark blue for headings */
+    border-bottom: 2px solid #004080; /* Dark blue underline for headings */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #0080ff; /* Light blue for subheadings */
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ol, ul {
+    margin-bottom: 15px;
+}
+
+/* Color Schema Styles */
+section {
+    background-color: #fff; /* White background for sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+/* Wireframe Styles */
+.wireframe {
+    border: 1px dashed #ccc;
+    margin: 10px;
+    padding: 10px;
+}

@@ -1,29 +1,8 @@
-/* Larger view styles (applies to screens wider than 768px) */
-@media (min-width: 768px) {
-    /* Header styles for larger view */
-    header {
-        padding: 2rem;
-    }
-
-    /* Navigation styles for larger view */
-    nav {
-        padding: 2rem;
-    }
-
-    /* Main content styles for larger view */
-    main {
-        display: grid;
-        grid-template-columns: 2fr 1fr; /* Two-column layout */
-        gap: 2rem;
-    }
-
-    /* Adjust styles for the card layout in larger view */
-    .card {
-        width: 100%; /* Take full width in larger view */
-    }
-
-    /* Footer styles for larger view */
-    footer {
-        padding: 2rem;
-    }
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }

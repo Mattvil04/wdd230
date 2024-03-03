@@ -17,6 +17,7 @@ header {
     color: white;
     padding: 1rem;
     font-size: 1cm;
+    flex-wrap: wrap;
 }
 header img {
     border-radius: 50%;
@@ -61,13 +62,17 @@ h1 {
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1rem;
-    grid-column: 1;
+    flex-wrap: wrap;
+
+}
+.card1 ul{
+    padding-left: 1cm;
 }
 .card2 {
     border: 1px solid #ddd;
     padding: 1rem;
-    margin-bottom: 1rem;
-    grid-column: 2;
+    margin-bottom: 1rem;flex-wrap: wrap;
+
 }
 /* Footer styles */
 footer {
