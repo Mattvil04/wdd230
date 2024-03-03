@@ -16,7 +16,7 @@ main {
     gap: 1rem;
 }
 
-section {
+.card {
     padding: 1rem;
     background-color: #ffffff; /* White background color */
 }
