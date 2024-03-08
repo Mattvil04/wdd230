@@ -4,9 +4,7 @@ body, h1, h2, p, ul {
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
-    min-height: 100vh;
+    
     font-family: 'Roboto', sans-serif;
 }
 header {
@@ -17,34 +15,36 @@ header {
     color: white;
     padding: 1rem;
     font-size: 1cm;
-    flex-wrap: wrap;
+    
 }
 header img {
-    border-radius: 50%;
     margin-right: 1rem;
 }
 nav {
     background-color: #eee;
     padding: 1rem;
     font-size: 1cm;
+
 }
 
 nav ul {
     list-style: none;
-    display: flex;
     justify-content: space-around;
+    display: flex;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    
+
 }
 /* Main content styles */
 main {
     padding: 2rem;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -55,6 +55,7 @@ h1 {
     display: inline-block; /* Asegura que el subrayado se extienda solo hasta el ancho del texto */
     padding-bottom: 1px; /* Espacio entre el texto y el subrayado */
     grid-column: 1/3;
+   
 }
 
 /* Cards layout */
@@ -62,8 +63,7 @@ h1 {
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1rem;
-    flex-wrap: wrap;
-
+    
 }
 .card1 ul{
     padding-left: 1cm;
@@ -71,7 +71,9 @@ h1 {
 .card2 {
     border: 1px solid #ddd;
     padding: 1rem;
-    margin-bottom: 1rem;flex-wrap: wrap;
+    margin-bottom: 1rem;
+   
+    
 
 }
 /* Footer styles */
