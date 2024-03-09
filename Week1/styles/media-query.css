@@ -1,22 +1,22 @@
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-header, main, footer {
+  }
+  
+  header, main, footer {
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px solid #b0c4de; /* Faint border color */
     padding: 1rem;
-    background-color: #e6f7ff; /* Blueish background color */
-}
-
-main {
+    border: 1px solid #ccc;
+    background-color: #b3d9ff; /* Blueish background color of your choice */
+  }
+  
+  main {
     display: grid;
-    grid-template-columns: 1fr; /* One column */
+    grid-template-columns: 1fr;
     gap: 1rem;
-}
-
-.card {
+  }
+  
+  section {
     padding: 1rem;
-    background-color: #ffffff; /* White background color */
-}
+    background-color: #fff;
+  }
