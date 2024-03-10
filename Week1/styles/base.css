@@ -15,16 +15,19 @@ header {
     color: white;
     padding: 1rem;
     font-size: 1cm;
-    
 }
 header img {
     margin-right: 1rem;
 }
+
 nav {
     background-color: #eee;
     padding: 1rem;
     font-size: 1cm;
 
+}
+#menuButton {
+    display: none;
 }
 
 nav ul {
@@ -32,13 +35,14 @@ nav ul {
     justify-content: space-around;
     display: flex;
 }
-
 nav a {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: bold;
-    
-
+}
+ul.menuLinks a:hover {
+    background-color: cornsilk;
+    color: #3498db;
 }
 /* Main content styles */
 main {
