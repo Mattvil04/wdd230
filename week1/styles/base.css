@@ -24,8 +24,24 @@ nav {
     background-color: #eee;
     padding: 1rem;
     font-size: 1cm;
-
 }
+
+#darkMode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+#darkMode img {
+    width: 44px;
+    height: auto;
+}
+
+
 #menuButton {
     display: none;
 }
@@ -41,7 +57,6 @@ nav a {
     font-weight: bold;
 }
 ul.menuLinks a:hover {
-    background-color: cornsilk;
     color: #3498db;
 }
 /* Main content styles */
@@ -50,6 +65,12 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+}
+main.open {
+    background-color: black;
+}
+main.open h1, h2 {
+    color: white;
 }
 
 h1 {

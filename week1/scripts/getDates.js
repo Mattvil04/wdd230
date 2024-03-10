@@ -10,3 +10,8 @@ hamburgerElement.addEventListener("click", () => {
     navElement.classList.toggle('open');
     hamburgerElement.classList.toggle('open');
 })
+const darkmodeElement = document.querySelector('#darkMode')
+const mainElement =document.querySelector("main")
+darkmodeElement.addEventListener('click', () => {
+    mainElement.classList.toggle('open');
+})
