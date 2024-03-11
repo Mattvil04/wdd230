@@ -12,8 +12,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #004000; /* Dark background color for better contrast */
-    color: white;
+    background-color: #5a9eeb; /* Dark background color for better contrast */
+    color: #000000;
     padding: 1rem;
     font-size: 1cm;
 }
@@ -23,7 +23,7 @@ header img {
 }
 
 nav {
-    background-color: #f5f5f5;
+    background-color: #dbebf2;
     padding: 1rem;
     font-size: 1cm;
 }
@@ -94,6 +94,9 @@ main.open p,
 main.open li {
     color: white;
 }
+main.open a {
+    color: #a8c5ea;
+}
 main.open a:hover {
     color: #0088ff;
 }
@@ -116,7 +119,7 @@ main.open a:hover {
 .card1 a {
     text-decoration: none;
     padding: 0.3rem;
-    color: #0066cc; /* Link color for better visibility */
+    color: #24579b; /* Link color for better visibility */
 }
 
 .card2 {
