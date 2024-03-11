@@ -1,27 +1,29 @@
+
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
 
 body {
-    
     font-family: 'Roboto', sans-serif;
 }
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: #004000; /* Dark background color for better contrast */
     color: white;
     padding: 1rem;
     font-size: 1cm;
 }
+
 header img {
     margin-right: 1rem;
 }
 
 nav {
-    background-color: #eee;
+    background-color: #f5f5f5;
     padding: 1rem;
     font-size: 1cm;
 }
@@ -30,17 +32,17 @@ nav {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     cursor: pointer;
     background: none;
     border: none;
 }
+
 #darkMode img {
     width: 44px;
     height: auto;
 }
-
 
 #menuButton {
     display: none;
@@ -51,62 +53,82 @@ nav ul {
     justify-content: space-around;
     display: flex;
 }
+
 nav a {
     text-decoration: none;
-    color: black;
+    color: #333; /* Adjusted link color for better visibility */
     font-weight: bold;
 }
+
 ul.menuLinks a:hover {
-    color: #3498db;
+    color: #0066cc;
 }
+
 /* Main content styles */
 main {
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-}
-main.open {
-    background-color: black;
-}
-main.open h1, h2 {
-    color: white;
 }
 
 h1 {
     color: #333;
     margin-bottom: 1cm;
-    border-bottom: 2px solid #3498db; /* Color y grosor del subrayado */
-    display: inline-block; /* Asegura que el subrayado se extienda solo hasta el ancho del texto */
-    padding-bottom: 1px; /* Espacio entre el texto y el subrayado */
+    border-bottom: 2px solid #0066cc;
+    display: inline-block;
+    padding-bottom: 1px;
     grid-column: 1/3;
-   
 }
 
+h2 {
+    color: #333;
+}
+
+main.open {
+    background-color: #333;
+}
+
+main.open h1,
+main.open h2,
+main.open p,
+main.open li {
+    color: white;
+}
+main.open a:hover {
+    color: #0088ff;
+}
 /* Cards layout */
 .card1 {
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1rem;
-    
 }
-.card1 ul{
-    padding-left: 1cm;
+
+.card1 ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
 }
+
+.card1 li {
+    margin-bottom: 0.3rem;
+}
+
+.card1 a {
+    text-decoration: none;
+    padding: 0.3rem;
+    color: #0066cc; /* Link color for better visibility */
+}
+
 .card2 {
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1rem;
-   
-    
-
 }
+
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #333; /* Dark background color for better contrast */
     color: white;
     text-align: center;
     padding: 1rem;
 }
-
-/* Add more styles as needed */
