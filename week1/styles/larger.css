@@ -28,7 +28,7 @@
     }
 
     #menuButton::before {
-        content: "Menu";
+        content: "/2630";
     }
 
     #menuButton.open::before {
