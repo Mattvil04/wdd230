@@ -94,7 +94,7 @@ main.open {
     background-color: #333;
 }
 
-main.open h1,
+main.open #title,
 main.open h2,
 main.open p,
 main.open li {
