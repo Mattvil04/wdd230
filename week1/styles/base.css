@@ -20,6 +20,8 @@ header {
 
 header img {
     margin-right: 1rem;
+    width: auto;
+    height: auto;
 }
 
 nav {
@@ -64,6 +66,13 @@ ul.menuLinks a:hover {
     color: #0066cc;
 }
 
+.hero picture {
+    width: 100%;
+ }
+.hero img {
+    width: 100%;
+    height: auto;
+}
 /* Main content styles */
 main {
     padding: 2rem;

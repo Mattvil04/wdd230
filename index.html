@@ -9,7 +9,7 @@
     <!-- Add Open Graph meta properties -->
     <meta property="og:title" content="My personal home page">
     <meta property="og:type" content="website">
-    <meta property="og:image" content=""> <!-- Provide an absolute URL to an image -->
+    <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-39491-wallpaper.jpg"> <!-- Provide an absolute URL to an image -->
     <meta property="og:url" content="https://mattvil04.github.io/wdd230/"> <!-- Provide the canonical URL for my page -->
     <link rel="stylesheet" href="week1/styles/normalization.css">
     <!-- End Open Graph meta properties -->
@@ -38,7 +38,7 @@
 
     <!-- Navigation -->
     <nav>
-        <button id="menuButton">menu</button>
+        <button id="menuButton"></button>
         <ul class="menuLinks">
             <li><a href="#">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -49,6 +49,13 @@
 
     <!-- Main Content -->
     <main>
+    <div class="hero">
+        <picture>
+            <source srcset="week1/images/hero_small.webp" media="(max-width: 400px)">
+            <source srcset="week1/images/hero_large.webp" media="(max-width: 960px)"> 
+            <img src="week1/images/hero_large.webp" alt="hero">
+        </picture>
+    </div>
         <span id="title">WDD 230: Web Frontend Develoment</span>
 
     
