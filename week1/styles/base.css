@@ -65,13 +65,29 @@ nav a {
 ul.menuLinks a:hover {
     color: #0066cc;
 }
-
+.hero{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
 .hero picture {
     width: 100%;
  }
 .hero img {
     width: 100%;
     height: auto;
+}
+.herolabel{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    bottom: 0;
+    right: 0;
+    
+}
+.herolabel p {
+    font-size: 3rem;
+    color: white;
 }
 /* Main content styles */
 main {
@@ -149,8 +165,11 @@ section {
 .card2 p {
     padding-left: 0.5rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
-
+iframe {
+    width: 100%;
+}
 /* Footer styles */
 footer {
     background-color: #333; /* Dark background color for better contrast */

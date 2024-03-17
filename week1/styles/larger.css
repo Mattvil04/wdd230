@@ -1,10 +1,10 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     
     header h1 {
         font-size: 2rem;
     }
     header img {
-        width: auto;
+        width: 150px;
         height: auto;
     }
     #menuButton {
@@ -40,7 +40,10 @@
     #menuButton.open::before {
         content: "x";
     }
-
+    .herolabel p {
+        font-size: 1.5rem;
+    
+    }
 
     .card1 {
         grid-column: 1/3;
