@@ -9,9 +9,9 @@
     <!-- Add Open Graph meta properties -->
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="Official website">
-    <meta property="og:image" content=""> <!-- Provide an absolute URL to an image -->
+    <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-39491-wallpaper.jpg"> <!-- Provide an absolute URL to an image -->
     <meta property="og:url" content="https://mattvil04.github.io/wdd230/"> <!-- Provide the canonical URL for my page -->
-    <link rel="stylesheet" href="week1/styles/normalization.css">
+    <link rel="stylesheet" href="styles/normalization.css">
     <!-- End Open Graph meta properties -->
     <link rel="icon" href="week1/images/favicon.ico" type="image/x-icon" >
     <!-- Link to Google Fonts -->
@@ -32,59 +32,110 @@
         
     </header>
     <nav>
-        <button id="menuButton">menu</button>
+        <button id="menuButton"></button>
         <ul class="menuLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <section class="hero">
-        <h2>Welcome to the Chamber of Commerce</h2>
-        <h2>Your gateway to business success!</h2>
-        <img src="" alt="hero image">
-    </section>
-    <main>
-        <h2>We are aiming for:</h2>
-        <p>Promote business through member services.</p>
-        <p>Facilitate economic and community development.</p>
-        <p>Influence public policy for balanced economic prosperity.</p>
-         
-        <section> 
-            <h2>About Us</h2>
-            <p>The Chamber of Commerce is dedicated to promoting local businesses and fostering economic growth in our community.</p>
+    <div class="hero">
+  <!-- Call to Action Section -->
+        <div class="herolabel">
+            <h2>Join Us Today!</h2>
+            <div class="hero_msg">
             <p>Learn more about our mission, services, and how you can get involved!</p>
+            <p>Unlock exclusive benefits and networking opportunities by becoming a member.</p>
+            </div>
+            <div class="herolinks">
+            <a href="join.html">Join Now</a>  
             <a href="about.html">Learn More</a>
-        </section>
-        
+            </div>
+        </div>
+        <picture>
+            <source srcset="images/hero_large.webp" media="(max-width: 500px)">
+            <source srcset="images/hero_large.webp" media="(max-width: 1000px)">
+            <img src="images/hero_large.webp" loading="lazy" alt="hero" width="500" height="250">
+        </picture>
+    </div>
+    <main> 
+        <h2 class="title">Current Events</h2>
+           
+            <section class="event">
+                <h3>Business Networking Event</h3>
+                <div>
+                    <p>Join us for our monthly networking event where local businesses come together to connect and collaborate.</p>
+                    <p>Date: April 15, 2024</p>
+                    <p>Time: 6:00 PM</p>
+                </div>
+                <a href="#">Learn More</a>
+            </section>
 
+            <section class="weather">
+                <h3>Weather</h3>
+                <div class="weather-card">
+
+                    <h3>Today's Forecast</h3>
+                    <p>Partly cloudy with a high of 78°F and a low of 62°F. Winds from the southeast at 5 to 10 mph.</p>
+                
+                </div>
+            </section>
+
+            <section class="event">
+            <h3>Community Workshop</h3>
+                <div>
+                    <p>Attend our workshop on sustainable business practices and learn how to make your business more eco-friendly.</p>
+                    <p>Date: April 20, 2024</p>
+                    <p>Time: 9:00 AM</p>
+                </div>
+                <a href="#">Learn More</a>
+            </section>
+            <section class="weather">
+                <h3>Weather</h3>
+                <div class="weather-card">
+                    <h3>Today's Forecast</h3>
+                    <p>Partly cloudy with a high of 78°F and a low of 62°F. Winds from the southeast at 5 to 10 mph.</p>
+                </div>
+            </section>
+
+
+ 
+   
+    <h2 class="spotlight_title">Spotlight place</h2>
     <!-- Business Spotlights Section -->
-    <section>
+    <section id="spotlights">
         <div class="spotlight">
+            <img src="images/usuarios.svg" alt="icon">
             <h3>Spotlight Business 1</h3>
             <p>Check out our featured member of the month!</p>
             <a href="business1.html">Learn More</a>
         </div>
         <div class="spotlight">
+            <img src="images/icon_services.svg" alt="icon">
             <h3>Spotlight Business 2</h3>
             <p>Explore the services offered by this local gem.</p>
             <a href="business2.html">Learn More</a>
         </div>
+        <div class="spotlight">
+            <img src="images/edificio.svg" alt="icon">
+            <h3>Spotlight Business 3</h3>
+            <p>Explore the services offered by this local gem.</p>
+            <a href="business2.html">Learn More</a>
+        </div>
     </section>
-    <!-- Call to Action Section -->
-    <section class="cta">
-        <h3>Join Us Today!</h3>
-        <p>Unlock exclusive benefits and networking opportunities by becoming a member.</p>
-        <a href="join.html">Join Now</a>
-    </section>
+
     </main>
-    <footer>
+
+    <footer> 
+        <div>
         <p>&copy;<span id="year"></span> Matias Villacis - Ecuador</p>
+        <p>wdd 230: Web Frontend Development</p>
         <p id="lastModified"></p>
-        <p><a href="site_plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
+        </div>
+
         <div class="social">
+            <p><a href="contactus.html">Contact Us</a></p>
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
@@ -96,7 +147,7 @@
             </a>
         </div>
     </footer>
-    <script src="week1/scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
 
 </body>
 </html>

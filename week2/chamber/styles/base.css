@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Your baseline styling goes here */
 body {
     font-family: 'Roboto', sans-serif;
@@ -6,13 +11,200 @@ body {
 
 /* Additional styling for header, navigation, main content, footer, etc. */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a9eeb; /* Dark background color for better contrast */
+    color: #000000;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
+#darkMode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+#darkMode img {
+    width: 44px;
+    height: auto;
+}
+#menuButton {
+    display: none;
+}
 nav {
-    /* Add styling for navigation */
+    background-color: #dbebf2;
+    padding: 1rem;
+    font-size: 1cm;
+}
+nav ul {
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
 }
 
-/* Add more styling rules for different sections and elements */
+nav a {
+    text-decoration: none;
+    color: #333; /* Adjusted link color for better visibility */
+    font-weight: bold;
+}
+
+ul.menuLinks a:hover {
+    color: #0066cc;
+}
+.hero{
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.herolabel{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    padding: 1rem;
+    text-align: center;
+    
+    
+}
+.herolabel h2 {
+    font-size: 2.5rem;
+}
+.herolabel .hero_msg{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.herolabel a {
+    background-color: #0066cc;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: white;  
+}
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.title {
+    color: #333;
+    margin-bottom: 1cm;
+    border-bottom: 2px solid #0056ad;
+    display: inline-block;
+    padding-bottom: 1px;
+    font-size: 2rem;
+    grid-column: 1/3;
+}
+
+.event {
+    border: 1px solid #ddd ;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+.event h3 {
+    background-color: #dbebf2;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.event div {
+    padding: .5rem;
+}
+.event a {
+    padding: 0.5rem;
+    bottom: 1rem;
+}
+
+.weather {
+    background-color: antiquewhite;
+    padding: 1rem;
+    
+}
+.spotlight_title {
+
+    padding-top: 3rem;
+    color: #333;
+    margin-bottom: 1cm;
+    font-size: 2rem;
+    grid-column: 1/3;
+    text-align: center;
+}
+#spotlights {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 7rem;
+}
+.spotlight{
+    text-align: center;
+    padding: 1rem;
+
+}
+.spotlight img {
+    width: 50px;
+    height: auto;
+}
+.spotlight h3,
+p,
+a{
+    padding: 0.5rem;
+}
+
+/* Add more styling rules for different sections and elements */ 
+footer{
+    background-color:#000000;
+    color:#f2b9e4;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}    
+footer .social img{
+    padding-top: 15px;
+}      
+footer a :hover{
+    color: #f2b9e4;
+}
+    
+footer a{
+    color: #8338ec;
+    text-decoration: none;
+}
+main.open {
+    background-color: #333;
+}
+
+main.open #title,
+main.open h2 {
+    color: white;
+}
+main.open .event h3 {
+    background-color: #0056ad;
+    color: white;
+}
+main.open .event p {
+    color: white;
+}
+main.open .event a {
+    color: #a8c5ea;
+}
+main.open .spotlight {
+    background-color: #f2b9e4;
+}
