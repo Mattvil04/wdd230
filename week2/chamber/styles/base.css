@@ -84,7 +84,7 @@ ul.menuLinks a:hover {
 }
 
 .herolabel a {
-    background-color: #0066cc;
+    background-color: #2835c2;
     border-radius: 15px;
     text-decoration: none;
     padding: 0.5rem;
@@ -184,7 +184,7 @@ footer a :hover{
 }
     
 footer a{
-    color: #8338ec;
+    color: #f2b9e4;
     text-decoration: none;
 }
 main.open {
@@ -196,7 +196,7 @@ main.open h2 {
     color: white;
 }
 main.open .event h3 {
-    background-color: #0056ad;
+    background-color:  #0056ad;
     color: white;
 }
 main.open .event p {
@@ -206,5 +206,8 @@ main.open .event a {
     color: #a8c5ea;
 }
 main.open .spotlight {
-    background-color: #f2b9e4;
+    background-color: #ffd5d4;
+}
+.spotlight a {
+    color: #000972;
 }
