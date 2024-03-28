@@ -156,8 +156,8 @@ main {
     height: auto;
 }
 .spotlight h3,
-p,
-a{
+.spotlight p,
+.spotlight a{
     padding: 0.5rem;
 }
 
@@ -210,4 +210,97 @@ main.open .spotlight {
 }
 .spotlight a {
     color: #000972;
+}
+/* CSS for sidebar layout using CSS Grid */
+
+.discover {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4 of the width, main content takes 3/4 */
+    grid-gap: 20px; /* Gap between sidebar and main content */
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 20px; /* Gap between visit message and area info */
+
+}
+
+.visit-message {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.area-info {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.area-info h2 {
+    padding-bottom: 3%;
+}
+.area-info h3 {
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.main-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;    
+}
+.main-content h3{
+    padding-bottom: 3%;
+}
+
+.main-area {
+    /* Main content styles */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-template-rows: 15% auto auto;
+    grid-gap: 5%;
+}   
+.main-area img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 3%;
+}
+.main-area-head {
+    grid-column: 1/3;
+
+}
+.main-area h2{
+    padding-bottom: .75rem;
+    font-size: 2.5rem;
+}
+.main-area p{
+    font-size: 1.5;
+}
+.more {
+    grid-column: 1/3;
+    text-align: center;
+    padding: 5%;
+}
+.more h2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2rem;
+}
+.more div {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+.more div img {
+    width: 30%;
+    height: auto;
+}
+main.open .area-info h2 {
+    color: #000000;
+
+}
+main.open .main-area p {
+    color: white;
 }

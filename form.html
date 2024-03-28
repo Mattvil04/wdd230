@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matias Villacis - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Matias Villacis my portal course assignments of Web Frontend Develoment">
+    <meta name="description" content="WDD 230 - Matias Villacis form assignment of Web Frontend Develoment">
     <meta name="author" content="Matias Villacis">
     <!-- Add Open Graph meta properties -->
-    <meta property="og:title" content="My personal home page">
+    <meta property="og:title" content="form">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-39491-wallpaper.jpg"> <!-- Provide an absolute URL to an image -->
     <meta property="og:url" content="https://mattvil04.github.io/wdd230/"> <!-- Provide the canonical URL for my page -->
@@ -20,14 +20,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Link to base.css -->
-    <link rel="stylesheet" href="week1/styles/base.css">
+   
 
     <!-- Link to larger.css (media query) -->
-    <link rel="stylesheet" href="week1/styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
         <button id="darkMode">
             <img src="week1/images/dark-theme-svgrepo-com.svg" alt="dark mode">
@@ -46,46 +44,33 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
-    <div class="hero">
-        <div class="herolabel">
-			<p>Vernal Temple Utah</p>
-		</div>
-        <picture>
-            <source srcset="week1/images/hero_small.webp" media="(max-width: 400px)">
-            <source srcset="week1/images/hero_large.webp" media="(max-width: 960px)">
-            <img src="week1/images/hero_large.webp" loading="lazy" alt="hero" width="500" height="250">
-        </picture>
-    </div>
-    <!-- Main Content -->
     <main>
-        
-        <span id="title">WDD 230: Web Frontend Develoment</span>
-
-    
-        <section class="card1">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="week1/holygrail.html">holygrail</a> <a href="week1/media-query.html">media-query</a></li>
-                <li><a href="week2/design.html">Design</a> <a href="week2/bom.html">bom</a></li>
-                <li><a href="week1/images/landscape.webp">webp</a> <a href="week3/lazyload.html"></a> <a href="week3/responsive_images.html"> </a></li>
-                <li><a href="#">Activity 4</a></li>
-                <li><a href="#">Activity 5</a></li>
-                <li><a href="#">Activity 6</a></li>
-                <li><a href="#">Activity 7</a></li>
-            </ul>
-        </section>
-
-
-        <!-- Card 2: Información -->
-        <section class="card2">
-            <h2>Information</h2>
-            <p>Weather: Weather info</p>
-            <p><span class="label">Visits:</span><span class="visits"></span></p>
-        </section>
-    
+    <h2>Submit Your Information</h2>
+    <form action="record.html" method="get">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and alphanumeric" required>
+        </div>
+        <div>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+        </div>
+        <div>
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5">
+            <output for="rating">5</output>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
     </main>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15959.271452734734!2d-78.44107839999998!3d-0.02742805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1710624936183!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- Footer -->
     <footer>
         <p>&copy;<span id="year"></span> Matias Villacis - Ecuador</p>
         <p id="lastModified"></p>
@@ -93,6 +78,5 @@
 
     <!-- JavaScript to dynamically set year and last modified date -->
     <script src="week1/scripts/getDates.js"></script>
-
 </body>
 </html>

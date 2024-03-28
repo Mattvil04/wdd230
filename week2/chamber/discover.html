@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home page</title>
+    <meta name="description" content="WDD - 230 - Chamber Home page">
+    <meta name="author" content="Matias Villacis">
+    <!-- Add Open Graph meta properties -->
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="Official website">
+    <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-39491-wallpaper.jpg"> <!-- Provide an absolute URL to an image -->
+    <meta property="og:url" content="https://mattvil04.github.io/wdd230/"> <!-- Provide the canonical URL for my page -->
+    <link rel="stylesheet" href="styles/normalization.css">
+    <!-- End Open Graph meta properties -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link to base.css and large.css-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce - Quito</h1>
+        <button id="darkMode">
+            <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode">
+        </button>
+        
+    </header>
+    <nav>
+        <button id="menuButton"></button>
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main class="discover"> 
+        <aside class="sidebar">
+            <div class="visit-message">
+                <!-- Sidebar content for visit message based on localStorage -->
+                <p id="visitMessage">Welcome! Let us know if you have any questions.</p>
+            </div>
+            <div class="area-info">
+                <!-- Sidebar content for demographics, statistical data, events, etc. -->
+                <!-- Area information content -->
+                <h2>About Quito</h2>
+                <p>Quito, the capital city of Ecuador, is located in the Andes mountains at an elevation of over 2,850 meters (9,350 feet) above sea level. It is one of the highest capital cities in the world and is known for its rich history, stunning colonial architecture, and vibrant culture.</p>
+                <h3>Demographics</h3>
+                <ul>
+                    <p>Population: Approximately 2.7 million (as of 2020)</p>
+                    <p>Languages: Spanish (official), Quechua</p>
+                    <p>Ethnic groups: Mestizo, Indigenous, White, Afro-Ecuadorian</p>
+                </ul>
+        
+                <h3>Statistical Data</h3>
+                <ul>
+                    <p>GDP per capita: $XX,XXX (USD)</p>
+                    <p>Unemployment rate: X%</p>
+                    <p>Major industries: Tourism, Agriculture, Manufacturing</p>
+                </ul>
+        
+            </div>
+            <div class="main-content">
+                <h3>Events</h3>
+                
+                    <p>Quito hosts a variety of events throughout the year, including:</p>
+                    
+                    <p>Quito Festival (Fiesta de Quito) - Celebrates the city's founding</p>
+                    <p>Carnival celebrations</p>
+                    <p>Independence Day festivities</p>
+                    
+            </div>
+        </aside>
+     
+   
+        <section class="main-area">
+            <div class="main-area-head">
+            <h2>Attractions</h2>
+            <p>Some popular attractions in Quito include:</p>
+            </div>
+            <div>
+                
+                <img src="images/small-centro-historico-quito.webp" loading="lazy" alt="img1">
+                <p>Historic Center of Quito - UNESCO World Heritage Site</p>
+            
+            </div>
+            <div>
+        
+                <img src="images/small-mitad-del-mundo-quito.webp" loading="lazy" alt="img2">
+                <p>Mitad del Mundo - Monument marking the equator</p>
+
+            </div>
+            <div>
+               
+                <img src="images/small_teleferico.webp" loading="lazy" alt="img3">
+                <p>Teleférico - Cable car offering stunning views of the city</p>
+        
+            </div>
+            <div>
+
+                <img src="images/small-panecillo.webp" loading="lazy" alt="img4">
+                <p>El Panecillo - Hill with a towering statue of the Virgin of Quito</p>
+            
+            </div>
+            <!-- Main area with local photos and lazy loading -->
+           
+                
+        </section>
+        <section class="more">
+            <h2>More attractions</h2>
+            <div>
+                <img src="images/volcan.jpg" loading="lazy" alt="Turism">
+                <img src="images/quito-tour-bus.webp" loading="lazy" alt="Turism">
+                <img src="images/Quito-turismo-02.webp" loading="lazy" alt="turism">
+            </div>
+        </section>
+  
+    
+    </main>
+
+    <footer> 
+        <div>
+        <p>&copy;<span id="year"></span> Matias Villacis - Ecuador</p>
+        <p>wdd 230: Web Frontend Development</p>
+        <p id="lastModified"></p>
+        </div>
+
+        <div class="social">
+            <p><a href="#">Contact Us</a></p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

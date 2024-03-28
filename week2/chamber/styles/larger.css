@@ -77,6 +77,27 @@
     footer p {
         font-size: .7rem;
     }
+    .discover {
+        display: block;
+    }
+    .main-area {
+        display: block;
+    }
+    .main-area h2 {
+        padding-top: 5%;
+    }
+    .main-area img {
+    padding-top: 10%;
+    }
+    .more div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .more div img {
+        padding-bottom: 5%;
+        width: 100%;
+        height: auto;
+    }
 }
 @media screen and (max-width: 900px) and (min-width: 700px) {
     header h1 {
@@ -109,6 +130,25 @@
     footer p {
         font-size: 1rem;
     }
-
-
+    .discover {
+        display: block;
+    }
+    .main-area {
+        display: block;
+    }
+    .more div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .more div img {
+        padding-bottom: 5%;
+        width: 100%;
+        height: auto;
+    }
+    .main-area h2 {
+        padding-top: 5%;
+    }
+    .main-area img {
+    padding-top: 10%;
+    }
 }
