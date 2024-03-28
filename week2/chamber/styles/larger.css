@@ -89,11 +89,13 @@
     .main-area img {
     margin-top: 10%;
     }
-    .more div {
+    .more section {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .more div img {
+    .more section div img {
+        margin-top: 10%;
         margin-bottom: 5%;
         width: 100%;
         height: auto;
@@ -136,11 +138,13 @@
     .main-area {
         display: block;
     }
-    .more div {
+    .more section {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .more div img {
+    .more section div img {
+        margin-top: 10%;
         margin-bottom: 5%;
         width: 100%;
         height: auto;

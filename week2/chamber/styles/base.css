@@ -296,19 +296,23 @@ main.open .spotlight {
     padding-bottom: 2%;
     font-size: 2rem;
 }
-.more div {
-    display: flex;
-    justify-items: center;
-    justify-content: space-around;
+.more section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
 }
-.more div img {
-    width: 30%;
+.more section div img {
+    width: 100%;
     height: auto;
+    margin-bottom: 5%;
 }
 main.open .area-info h2 {
     color: #000000;
 
 }
 main.open .main-area p {
+    color: white;
+}
+main.open .more p {
     color: white;
 }
