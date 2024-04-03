@@ -1,0 +1,84 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+.wtf fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+.wf1 legend {
+    color: blue;
+    padding: 0 .5rem;
+}
+.wf1 label {
+    display: block;
+    padding: 1rem;
+    color: red;
+    font-size: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    color: blue;
+    font-size: .9rem;
+}
+.wf1 input[type='text'],
+.wf1 input[type='tel'],
+.wf1 input[type='email'],
+.wf1 input[type='url'],
+.wf1 input[type='date'],
+.wf1 select,
+.wf1 input[type='number']{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+.wf1 input[type='radio'],
+.wf1 input[type='checkbox']{
+    margin-right: 6px;
+}
+.wf1 input[type='submit']{
+    border: none;
+    background-image: linear-gradient(red, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400%;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 1px #999;
+}
+.wf1 input:required{
+    border: 1px solid red;
+}
+.wf1 input:required:valid{
+    border: 1px solid green;
+}
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

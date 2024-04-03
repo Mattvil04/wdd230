@@ -11,9 +11,9 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-39491-wallpaper.jpg"> <!-- Provide an absolute URL to an image -->
     <meta property="og:url" content="https://mattvil04.github.io/wdd230/"> <!-- Provide the canonical URL for my page -->
-    <link rel="stylesheet" href="week1/styles/normalization.css">
+    <link rel="stylesheet" href="styles/normalization.css">
     <!-- End Open Graph meta properties -->
-    <link rel="icon" href="week1/images/favicon.ico" type="image/x-icon" >
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
     <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,9 +28,9 @@
 <body>
     <header>
         <button id="darkMode">
-            <img src="week1/images/dark-theme-svgrepo-com.svg" alt="dark mode">
+            <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode">
         </button>
-        <img src="week1/images/imgmv.webp" loading="lazy" alt="Profile Image">
+        <img src="images/imgmv.webp" loading="lazy" alt="Profile Image">
         <h1>Matias Villacis</h1>
     </header>
 
@@ -41,35 +41,38 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="week2/chamber/index.html">Chamber</a></li>
             <li><a href="week1/chamber_site_plan.html">Web site</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
     <main>
-    <h2>Submit Your Information</h2>
-    <form action="record.html" method="get">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+        <div class="form">
+        <h2>User request</h2>
+        <form action="record.html" method="get">
+            <fieldset>
+                <legend>Form submission</legend>
+                <label>Username* <input type="text" name="Username" id="username" required></label>
+                <label>Password* <input type="password" name="Password" id="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters and alphanumeric"></label>
+                <label>Password confirmation* <input type="password" name="RepeatedPassword" id="repeatedpassword" required></label>
+                <label>Email* <input type="email" name="Email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu domain"></label>
+                <label>Page Rating* <input type="range" name="rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="0">6</option>
+                    <option value="1">7</option>
+                    <option value="2">8</option>
+                    <option value="3">9</option>
+                    <option value="4">10</option>
+                </datalist>
+            </fieldset>
+            <input type="submit" value="submit request">
+        </form>
         </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and alphanumeric" required>
-        </div>
-        <div>
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
-        </div>
-        <div>
-            <label for="rating">Page Rating:</label>
-            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5">
-            <output for="rating">5</output>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+   
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Matias Villacis - Ecuador</p>
@@ -77,6 +80,7 @@
     </footer>
 
     <!-- JavaScript to dynamically set year and last modified date -->
-    <script src="week1/scripts/getDates.js"></script>
+    <script src="scripts/getDates.js"></script>
+     
 </body>
 </html>
