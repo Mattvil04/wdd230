@@ -100,6 +100,19 @@
         width: 100%;
         height: auto;
     }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    form h2 {
+        font-size: 2rem;
+    }
+    form h3 {
+        font-size: 1.5rem;
+    }
+    form label {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 900px) and (min-width: 700px) {
     header h1 {
