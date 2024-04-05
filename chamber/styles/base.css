@@ -316,3 +316,82 @@ main.open .main-area p {
 main.open .more p {
     color: white;
 }
+.container{
+    display: flex;
+  
+    justify-content: center;
+}
+form{
+    display: block;
+    background-color: #000972;
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: #000000;
+    text-align: center;
+}
+form div {
+    padding: 5%;
+}
+form div h2{
+    color: #a8c5ea;
+    font-size: 3rem;
+}
+form h3{
+    color: aliceblue;
+    font-size: 2rem;
+}
+form input[type='text'],
+form input[type='tel'],
+form input[type='email'],
+form textarea,
+form select
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    outline: none;
+}
+form label{
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 2%;
+}
+form input[type='submit']{
+    border: none;
+    background-image: linear-gradient(red, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 50%;
+    max-width: 400%;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 1px #999;
+}
+form input:required{
+    border: 1px solid red;
+}
+form input:required:valid{
+    border: 1px solid green;
+}
+aside{
+    background-color: burlywood;
+    padding: 5% 2% 5%;
+}
+aside h3{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+aside h4{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+aside p{
+    padding: 2% 1% 2%;
+}

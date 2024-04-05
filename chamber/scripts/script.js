@@ -42,3 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update localStorage with current visit date
     localStorage.setItem('lastVisit', Date.now());
 });
+function setTimestamp() {
+    var timestampField = document.getElementById("timestamp");
+    var now = new Date();
+    var timestamp = now.toISOString(); // Format: YYYY-MM-DDTHH:MM:SSZ
+    timestampField.value = timestamp;
+}
+
+// Call the function when the page is loaded
+window.onload = setTimestamp;

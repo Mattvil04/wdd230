@@ -37,12 +37,18 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
  
-    <main>
+    <main class="container">
         <form action="thankyou.html" method="get">
+            <div>
+                <h2>Registration</h2>
+            </div>
+            <div>
+                <h3>Personal Information</h3>
+            </div>
             <div>
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
@@ -52,16 +58,19 @@
                 <input type="text" id="lastName" name="lastName" required>
             </div>
             <div>
-                <label for="position">Position within Organization:</label>
-                <input type="text" id="position" name="position" pattern="[a-zA-Z\s\-]{7,}" required>
-            </div>
-            <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                <input type="email" id="email" name="email" placeholder="@gmail.com" required>
             </div>
             <div>
                 <label for="phone">Mobile Phone Number:</label>
                 <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <h3>Business Information</h3>
+            </div>
+            <div>
+                <label for="position">Position within Organization:</label>
+                <input type="text" id="position" name="position" pattern="[a-zA-Z\s\-]{7,}" required>
             </div>
             <div>
                 <label for="organization">Organization Name:</label>
@@ -69,7 +78,9 @@
             </div>
             <div>
                 <label for="membershipLevel">Membership Level:</label>
+                
                 <select id="membershipLevel" name="membershipLevel">
+                    <option value="">Please Select &#9662;</option>
                     <option value="NP Membership">NP Membership (No Fee)</option>
                     <option value="Bronze Membership">Bronze Membership</option>
                     <option value="Silver Membership">Silver Membership</option>
@@ -81,12 +92,32 @@
                 <textarea id="description" name="description"></textarea>
             </div>
             <input type="hidden" id="timestamp" name="timestamp" value="">
-            <button type="submit">Submit</button>
+            <input type="submit" value="register">
         </form>
 
         <!-- Membership level benefits displayed to the side of the form -->
         <aside>
             <h3>Membership Level Benefits</h3>
+            <h4>NP Membership (No Fee):</h4>
+            <p>Access to networking events with other non-profit organizations.</p>
+            <p>Listing on the Chamber's website as a non-profit member.</p>
+            <p>Opportunity to participate in community service projects sponsored by the Chamber.</p>
+            <p>Access to educational resources and workshops specifically tailored for non-profits.</p>
+            <h4>Bronze Membership:</h4>
+            <p>Access to networking events with other businesses and organizations.</p>
+            <p>Listing on the Chamber's website as a Bronze member.</p>
+            <p>Discounted rates for Chamber-sponsored events and workshops.</p>
+            <p>Opportunity to showcase business through Chamber's social media platforms.</p>
+            <h4>Silver Membership:</h4>
+            <p>All benefits of Bronze membership.</p>
+            <p>Priority placement in the Chamber's online business directory.</p>
+            <p>Enhanced visibility through featured articles in the Chamber's newsletter.</p>
+            <p>Opportunity to host or sponsor Chamber events.</p>
+            <h4>Gold Membership:</h4>
+            <p>All benefits of Silver membership.</p>
+            <p>Premier placement in the Chamber's online business directory with logo display.</p>
+            <p>Exclusive invitations to VIP events and receptions.</p>
+            <p>Dedicated account manager for personalized assistance with Chamber services.</p>
             <!-- Include benefits for each membership level -->
             <!-- Add additional styling as needed -->
         </aside>
