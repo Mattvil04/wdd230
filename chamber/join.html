@@ -41,28 +41,55 @@
         </ul>
     </nav>
  
-    <main> 
-        <h1>Course Proposal Application</h1>
-        <form method="get" action="thankyou.html" class="wf1">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label>First Name*<input type="text" name="fname" id="fname" required></label>
-                <label>Last Name*<input type="text" name="lname" required></label>
-                <label>Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
-                <label>Email*<input type="email" placeholder="someone@gmail.com" required></label>
-                <label>website*<input type="Url" name="url" placeholder="http://"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Course Information</legend>
-              
-            </fieldset>
-            <fieldset>
-                <legend>Funding</legend>
-                <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
-            </fieldset>
-            <input type="submit" value="Propose my course">
-    
+    <main>
+        <form action="thankyou.html" method="get">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="position">Position within Organization:</label>
+                <input type="text" id="position" name="position" pattern="[a-zA-Z\s\-]{7,}" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <div>
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="organization">Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+            </div>
+            <div>
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP Membership">NP Membership (No Fee)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+            <button type="submit">Submit</button>
         </form>
+
+        <!-- Membership level benefits displayed to the side of the form -->
+        <aside>
+            <h3>Membership Level Benefits</h3>
+            <!-- Include benefits for each membership level -->
+            <!-- Add additional styling as needed -->
+        </aside>
     </main>
 
     <footer> 
