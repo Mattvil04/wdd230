@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matias Villacis - WDD 230 - Web Frontend Development</title>
+    <title>Matias Villacis - WDD 230 - Web Frontend Development - form</title>
     <meta name="description" content="WDD 230 - Matias Villacis form assignment of Web Frontend Develoment">
     <meta name="author" content="Matias Villacis">
     <!-- Add Open Graph meta properties -->
@@ -49,29 +49,24 @@
         <section class="formContainer">
             <div>
                 <div id="formmessage"></div>
-                <h2>User request</h2>
+                <h2></h2>
             </div>
             <form action="record.html" method="get">
                 
                 <div>
-                    <label for="username">Username*</label> 
-                    <input type="text" name="username" id="username" required>
+                    <label>Username*<input type="text" name="username" id="username" required></label>
                 </div>
                 <div>
-                    <label for="password">Password*</label>
-                    <input type="password" name="password" id="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters and alphanumeric">
+                    <label>Password*<input type="password" name="password" id="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters and alphanumeric"></label>
                 </div>
                 <div>
-                    <label for="repeatedPassword">Password confirmation*</label>
-                    <input type="password" name="repeatedPassword" id="repeatedPassword" required>
+                    <label>Password confirmation*<input type="password" name="repeatedPassword" id="repeatedPassword" required></label>
                 </div>
                 <div>
-                    <label for="email">Email*</label> 
-                    <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu domain">
+                    <label>Email*<input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu domain"></label> 
                 </div>
                 <div>
-                    <label for="rating">Page Rating*</label>
-                    <input type="range" name="rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+                    <label>Page Rating*<input type="range" name="rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues">
                         <datalist id="rangevalues">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -85,11 +80,12 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                         </datalist>
+                    </label>
                         <div id="rangevalue">0</div>
                     
                 </div>
                 <div>
-                    <input type="submit" value="submit request">
+                    <input type="submit" value="Send">
                 </div>
             </form>
         </section>

@@ -68,6 +68,9 @@ nav a {
 ul.menuLinks a:hover {
     color: #0066cc;
 }
+main.open {
+  background-color: #333;
+}
 .Container{
   width: 100%;
   min-height: 100vh;
@@ -94,7 +97,9 @@ label{
 #rangevalue {
 	font-size: 2rem;
 	color: navy;
+  text-align: center;
 }
+
 .formContainer h2{
   font-size: 3rem;
   color: var(--secondary-color);
