@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Quito</title>
+    <meta name="description" content="WDD - 230 - Chamber of Commerce Home page">
+    <meta name="author" content="Matias Villacis">
+    <!-- Add Open Graph meta properties -->
+    <meta property="og:title" content="Chamber of Commerce - Quito">
+    <meta property="og:type" content="Chamber of Commerce - Quito Official Website">
+    <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-39491-wallpaper.jpg"> <!-- Provide an absolute URL to an image -->
+    <meta property="og:url" content="https://mattvil04.github.io/wdd230/"> <!-- Provide the canonical URL for my page -->
+    <link rel="stylesheet" href="styles/normalization.css">
+    <!-- End Open Graph meta properties -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link to base.css and large.css-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce - Quito</h1>
+        <button id="darkMode">
+            <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode">
+        </button>
+        
+    </header>
+    <nav>
+        <button id="menuButton"></button>
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+ 
+    <main> 
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email*<input type="email" placeholder="someone@gmail.com" required></label>
+                <label>website*<input type="Url" name="url" placeholder="http://"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+              
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
+            </fieldset>
+            <input type="submit" value="Propose my course">
+    
+        </form>
+    </main>
+
+    <footer> 
+        <div>
+        <p>&copy;<span id="year"></span> Matias Villacis - Ecuador</p>
+        <p>wdd 230: Web Frontend Development</p>
+        <p id="lastModified"></p>
+        </div>
+
+        <div class="social">
+            <p><a href="#">Contact Us</a></p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
