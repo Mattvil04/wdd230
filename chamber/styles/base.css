@@ -326,7 +326,6 @@ form{
     background-color: #000972;
     padding: 5%;
     border-radius: 20px;
-    box-shadow: #000000;
     text-align: center;
 }
 form div {
@@ -394,4 +393,24 @@ aside h4{
 
 aside p{
     padding: 2% 1% 2%;
+}
+.thankyouheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a9eeb; /* Dark background color for better contrast */
+    color: #000000;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+.mainMessage{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message{
+    padding: 5%;
+    background-color: #a8c5ea;
+    display: block;
 }
