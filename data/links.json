@@ -1,0 +1,102 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url":"week1/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week1/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      },
+    
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url":"week2/design.html",
+            "title":"designPrinciples"
+          },
+          {
+            "url":"week2/bom.html",
+            "title":"DomManipulation"
+          }
+        ]
+      },
+
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url":"week3/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week3/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      },
+
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url":"week4/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week4/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      },
+
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url":"week5/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week5/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      },
+
+      {
+        "week": "Week 6",
+        "links": [
+          {
+            "url":"week6/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week6/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      },
+      {
+        "week": "Week 7",
+        "links": [
+          {
+            "url":"week7/holygrail.html",
+            "title":"HG Layout"
+          },
+          {
+            "url":"week7/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      }
+
+     
+    ]
+}    
