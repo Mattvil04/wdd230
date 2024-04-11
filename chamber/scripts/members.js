@@ -1,37 +1,47 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const url = 'https://mattvil04.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
-async function getProphetData() {
+async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.prophets); // temporary testing of data retreival
-    displayProphets(data.prophets); // note that we reference the prophets array of the JSON data object, not just the object
+    displayMembers(data.members);
 }
   
-getProphetData();
+getMemberData();
 
-const displayProphets = (prophets) => {
-// card build code goes here
-prophets.forEach((prophet) => {
-    // Create elements to add to the div.cards element
-let card = document.createElement('section');
-let fullName = document.createElement('h2'); // fill in the blank
-let portrait = document.createElement('img');
+const displayMembers = (members) => {
+    members.forEach((member) => {
+        let card = document.createElement('section');
+        let name = document.createElement('h2');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('a');
+        let image = document.createElement('img');
+        let membershipLevel = document.createElement('p');
+        let otherInfo = document.createElement('p');
 
-// Build the h2 content out to show the prophet's full name
-fullName.textContent = `${prophet.name} ${prophet.lastname}`; // fill in the blank
-// Build the image portrait by setting all the relevant attributes
-portrait.setAttribute('src', prophet.imageurl);
-portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
-portrait.setAttribute('loading', 'lazy');
-portrait.setAttribute('width', '340');
-portrait.setAttribute('height', '440');
+        name.textContent = member.name;
+        address.textContent = `Address: ${member.address}`;
+        phone.textContent = `Phone: ${member.phone}`;
+        website.textContent = 'Website';
+        website.href = member.website;
+        website.target = '_blank';
+        membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
+        otherInfo.textContent = member.otherInfo;
+        image.setAttribute('src', member.image);
+        image.setAttribute('alt', `${member.name}`); // fill in the blank
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '340');
+        image.setAttribute('height', '440');
 
-// Append the section(card) with the created elements
-card.appendChild(fullName); //fill in the blank
-card.appendChild(portrait);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+        card.appendChild(image);
+        card.appendChild(membershipLevel);
+        card.appendChild(otherInfo);
 
-cards.appendChild(card);
-
+        cards.appendChild(card);
     });
 }

@@ -5,7 +5,7 @@
         "address": "123 Main St, City A, State A",
         "phone": "123-456-7890",
         "website": "https://www.companya.com",
-        "image": "companya.jpg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/images/auto-speed.svg",
         "membershipLevel": "Gold",
         "otherInfo": "Some additional information about Company A"
       },
@@ -14,7 +14,7 @@
         "address": "456 Elm St, City B, State B",
         "phone": "987-654-3210",
         "website": "https://www.companyb.com",
-        "image": "companyb.jpg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/images/baby-swim.svg",
         "membershipLevel": "Silver",
         "otherInfo": "Some additional information about Company B"
       },
@@ -23,7 +23,7 @@
         "address": "789 Oak St, City C, State C",
         "phone": "555-555-5555",
         "website": "https://www.companyc.com",
-        "image": "companyc.jpg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/beauty-box.svg",
         "membershipLevel": "Bronze",
         "otherInfo": "Some additional information about Company C"
       },
@@ -32,7 +32,7 @@
         "address": "321 Maple St, City D, State D",
         "phone": "111-222-3333",
         "website": "https://www.companyd.com",
-        "image": "companyd.jpg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/images/cheshire-county-hygiene-services.svg",
         "membershipLevel": "Gold",
         "otherInfo": "Some additional information about Company D"
       },
@@ -41,7 +41,7 @@
         "address": "456 Pine St, City E, State E",
         "phone": "444-444-4444",
         "website": "https://www.companye.com",
-        "image": "companye.jpg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/images/crofts-accountants.svg",
         "membershipLevel": "Silver",
         "otherInfo": "Some additional information about Company E"
       },
@@ -50,7 +50,7 @@
         "address": "789 Cedar St, City F, State F",
         "phone": "777-777-7777",
         "website": "https://www.companyf.com",
-        "image": "companyf.jpg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/images/fast-banana.svg",
         "membershipLevel": "Bronze",
         "otherInfo": "Some additional information about Company F"
       },
@@ -59,10 +59,10 @@
         "address": "987 Walnut St, City G, State G",
         "phone": "999-999-9999",
         "website": "https://www.companyg.com",
-        "image": "companyg.jpg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/beauty-box.svg",
         "membershipLevel": "Gold",
         "otherInfo": "Some additional information about Company G"
       }
     ]
-  }
+}
   
