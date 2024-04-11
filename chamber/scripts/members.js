@@ -46,3 +46,13 @@ const displayMembers = (members) => {
     });
 }
 
+const toggleViewButton = document.getElementById('toggleView');
+
+// Select the #cards element
+const cardsContainer = document.getElementById('cards');
+
+// Add a click event listener to the toggleView button
+toggleViewButton.addEventListener('click', function() {
+    // Toggle the 'single-column' class on the #cards element
+    cardsContainer.classList.toggle('single-column');
+});

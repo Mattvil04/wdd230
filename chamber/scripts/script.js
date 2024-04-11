@@ -3,7 +3,7 @@ document.getElementById('year').innerText = new Date().getFullYear();
 
 var lastModified = new Date(document.lastModified);
 document.getElementById('lastModified').innerText = 'Last modified: ' + lastModified.toLocaleString();
-
+//hamburger menu
 const hamburgerElement = document.querySelector('#menuButton');
 const navElement = document.querySelector('.menuLinks')
 hamburgerElement.addEventListener("click", () => {
@@ -16,6 +16,7 @@ darkmodeElement.addEventListener('click', () => {
     mainElement.classList.toggle('open');
 })
 
+//
 document.addEventListener('DOMContentLoaded', function() {
     // Retrieve last visit date from localStorage
     const lastVisit = localStorage.getItem('lastVisit');

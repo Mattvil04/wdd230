@@ -423,7 +423,7 @@ aside p{
    
 }
 #cards section {
-    background-color: #a8c5ea;
+    background-color: #dbebf2;
     padding: 3%;
   
 }
@@ -451,5 +451,13 @@ a{
     border: none;
     
 }
-    
+#cards.single-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards.single-column section {
+    margin-bottom: 5%;
+}
 
