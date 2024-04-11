@@ -447,3 +447,14 @@ section {
     border-radius: 8px;
     margin-top: 10px;
   }
+  .grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for list view */
+.list-view {
+    display: flex;
+    flex-direction: column;
+}

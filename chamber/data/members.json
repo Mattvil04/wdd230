@@ -23,7 +23,7 @@
         "address": "789 Oak St, City C, State C",
         "phone": "555-555-5555",
         "website": "https://www.companyc.com",
-        "image": "https://mattvil04.github.io/wdd230/chamber/beauty-box.svg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/images/beauty-box.svg",
         "membershipLevel": "Bronze",
         "otherInfo": "Some additional information about Company C"
       },
@@ -59,7 +59,7 @@
         "address": "987 Walnut St, City G, State G",
         "phone": "999-999-9999",
         "website": "https://www.companyg.com",
-        "image": "https://mattvil04.github.io/wdd230/chamber/beauty-box.svg",
+        "image": "https://mattvil04.github.io/wdd230/chamber/images/beauty-box.svg",
         "membershipLevel": "Gold",
         "otherInfo": "Some additional information about Company G"
       }

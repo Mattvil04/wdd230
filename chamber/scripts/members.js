@@ -45,3 +45,25 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     });
 }
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+gridButton.addEventListener("click", () => {
+    if (viewMode !== 'grid') {
+        viewMode = 'grid';
+        gridButton.classList.add('active');
+        listButton.classList.remove('active');
+        cards.classList.remove('list');
+        cards.classList.add('grid');
+    }
+});
+
+listButton.addEventListener("click", () => {
+    if (viewMode !== 'list') {
+        viewMode = 'list';
+        listButton.classList.add('active');
+        gridButton.classList.remove('active');
+        cards.classList.remove('grid');
+        cards.classList.add('list');
+    }
+});
