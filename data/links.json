@@ -32,12 +32,12 @@
         "week": "Week 3",
         "links": [
           {
-            "url":"week3/holygrail.html",
-            "title":"HG Layout"
+            "url":"week3/lazyload.html",
+            "title":"Lazy-loading"
           },
           {
-            "url":"week3/media-query.html",
-            "title":"mQueries"
+            "url":"week3/responsive-images.html",
+            "title":"responsive-images"
           }
         ]
       },
@@ -46,12 +46,12 @@
         "week": "Week 4",
         "links": [
           {
-            "url":"week4/holygrail.html",
-            "title":"HG Layout"
+            "url":"week4/tablebuild.html",
+            "title":"HTML-Tables"
           },
           {
-            "url":"week4/media-query.html",
-            "title":"mQueries"
+            "url":"week4/Form-start/index.html",
+            "title":"forms"
           }
         ]
       },
@@ -60,39 +60,16 @@
         "week": "Week 5",
         "links": [
           {
-            "url":"week5/holygrail.html",
-            "title":"HG Layout"
+            "url":"week5/new-ward-member.json",
+            "title":"Jason_data"
           },
           {
-            "url":"week5/media-query.html",
-            "title":"mQueries"
-          }
-        ]
-      },
-
-      {
-        "week": "Week 6",
-        "links": [
-          {
-            "url":"week6/holygrail.html",
-            "title":"HG Layout"
+            "url":"week5/prophets.html",
+            "title":"Fetch-API"
           },
           {
-            "url":"week6/media-query.html",
-            "title":"mQueries"
-          }
-        ]
-      },
-      {
-        "week": "Week 7",
-        "links": [
-          {
-            "url":"week7/holygrail.html",
-            "title":"HG Layout"
-          },
-          {
-            "url":"week7/media-query.html",
-            "title":"mQueries"
+            "url":"week5/weather.html",
+            "title":"weather-API"
           }
         ]
       }

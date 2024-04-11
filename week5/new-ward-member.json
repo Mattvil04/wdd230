@@ -1,0 +1,55 @@
+{
+    "wardMembers": [
+      {
+        "familyName": "Smith",
+        "moveInDate": "2023-03-15",
+        "familySize": 4,
+        "visitedByBishopric": true,
+        "familyMembers": [
+          {
+            "name": "John Smith",
+            "gender": "Male",
+            "birthdate": "1990-05-12"
+          },
+          {
+            "name": "Mary Smith",
+            "gender": "Female",
+            "birthdate": "1992-08-25"
+          },
+          {
+            "name": "Emily Smith",
+            "gender": "Female",
+            "birthdate": "2015-11-03"
+          },
+          {
+            "name": "Michael Smith",
+            "gender": "Male",
+            "birthdate": "2018-07-19"
+          }
+        ]
+      },
+      {
+        "familyName": "Johnson",
+        "moveInDate": "2023-04-20",
+        "familySize": 3,
+        "visitedByBishopric": false,
+        "familyMembers": [
+          {
+            "name": "David Johnson",
+            "gender": "Male",
+            "birthdate": "1985-10-30"
+          },
+          {
+            "name": "Sarah Johnson",
+            "gender": "Female",
+            "birthdate": "1987-12-18"
+          },
+          {
+            "name": "Ethan Johnson",
+            "gender": "Male",
+            "birthdate": "2010-06-07"
+          }
+        ]
+      }
+    ]
+}

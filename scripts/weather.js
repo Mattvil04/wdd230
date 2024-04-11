@@ -1,4 +1,5 @@
 //select the HTML elements or call it in the document
+const myTown = document.querySelector("#town")
 const myTemperature = document.querySelector("#temperature");
 const myDescription = document.querySelector("#description");
 const myWeathericon = document.querySelector("#weather-icon");
@@ -28,6 +29,9 @@ async function apiFetch (){
 function displayResults(data) {
     myTemperature.innerHTML = `${data.main.temp}&deg;C`;
     myDescription.innerHTML = data.weather[0].description;
-
+    myTown.innerHTML = data.name
+    const iconsrc =  `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    myWeathericon.setAttribute('SRC', iconsrc);
+    myWeathericon.setAttribute('alt', data.weather[0].description)
 }
 apiFetch();
